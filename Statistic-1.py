@@ -61,11 +61,8 @@ class stats:
     self.lenn = lenn
   
   def mean(self):
-      ser = self.arr
-      sum = 0.0
-      for x in ser:
-          sum += float(x)
-      return sum/float(self.lenn)    
+      mean = sum(self.arr)/self.lenn
+      return mean  
 
   def median(self):
       ser = self.arr
